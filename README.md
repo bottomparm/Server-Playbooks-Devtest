@@ -36,3 +36,14 @@ TABLE - users
   |__ email
   |__ password
   |__ date
+
+## PHPUnit Testing Notes
+I did not submit any tests for this app. My knowledge of PHPUnit is not good enough to complete this portion of the project in a timely manner. I 100% understand how to test a CRUD application and have done it many times before. I would write unit tests for basic features such as:
+
+1. established database connection
+2. create.php creates a persistent user in the MySQL database
+3. read.php reads the correct user(s) from the MySQL database
+4. update.php updates a user sucessfully from the MySQL database
+5. delete.php deletes a user from the MySQL database
+
+I am looking into PHPUnit and will have a healthy explanation of the code required to fulfill 100% code coverage on this application.

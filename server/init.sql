@@ -1,3 +1,5 @@
+-- uncomment out line 3 to create database on your local machine
+
 -- CREATE DATABASE my_app;
 
   use my_app;
