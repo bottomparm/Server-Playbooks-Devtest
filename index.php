@@ -1,30 +1,21 @@
-<!DOCTYPE html>
-<html>
+<?php include "public/templates/header.php"; ?>
+
 <head>
-    <title>Dylan's PHP App</title>
-    <link rel="stylesheet" type="text/css" href="/public/style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dylan's PHP CRUD App</title>
+
+    <link rel="stylesheet" type="text/css" href="public/style.css" />
 </head>
-<body>
-	<form method="post" action="server.php" >
-		<div class="input-group">
-			<label>First Name</label>
-			<input type="text" name="firstName" value="">
-		</div>
-		<div class="input-group">
-			<label>Last Name</label>
-			<input type="text" name="lastName" value="">
-		</div>
-		<div class="input-group">
-			<label>Email</label>
-			<input type="text" name="email" value="">
-		</div>
-		<div class="input-group">
-			<label>Password</label>
-			<input type="text" name="password" value="">
-		</div>
-		<div class="input-group">
-			<button class="btn" type="submit" name="save" >Save</button>
-		</div>
-	</form>
-</body>
-</html>
+<ul>
+    <li>
+        <a href="public/create.php"><strong>Create</strong></a> - add a user
+    </li>
+    <li>
+        <a href="public/read.php"><strong>Read</strong></a> - find a user
+    </li>
+</ul>
+
+<?php include "public/templates/footer.php"; ?> 
