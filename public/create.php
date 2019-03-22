@@ -8,8 +8,8 @@ if (isset($_POST['submit'])) {
     $connection = new PDO($dsn, $username, $password, $options);
 
 $new_user = array(
-  "firstName" => $_POST['firstName'],
-  "lastName"  => $_POST['lastName'],
+  "firstname" => $_POST['firstname'],
+  "lastname"  => $_POST['lastname'],
   "email"     => $_POST['email'],
   "password"  => $_POST['password']
 );
@@ -35,7 +35,7 @@ $statement->execute($new_user);
 <?php include "templates/header.php"; ?>
 
 <?php if (isset($_POST['submit']) && $statement) { ?>
-  <?php echo escape($_POST['firstName']); ?> successfully added.
+  <?php echo escape($_POST['firstname']); ?> successfully added.
 <?php } ?>
 
 <h2>Add a user</h2>
@@ -43,11 +43,11 @@ $statement->execute($new_user);
 <form method="post">
     <div class="input-group">
         <label for="firstname">First Name</label>
-        <input type="text" name="firstName" id="firstName">
+        <input type="text" name="firstname" id="firstname">
     </div>
     <div class="input-group">
         <label for="lastname">Last Name</label>
-        <input type="text" name="lastName" id="lastName">
+        <input type="text" name="lastname" id="lastname">
     </div>
     <div class="input-group">
         <label for="email">Email Address</label>

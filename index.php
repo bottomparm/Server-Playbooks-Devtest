@@ -16,6 +16,12 @@
     <li>
         <a href="public/read.php"><strong>Read</strong></a> - find a user
     </li>
+    <li>
+        <a href="public/update.php"><strong>Update</strong></a> - edit a user
+    </li>
+    <li>
+        <a href="public/delete.php"><strong>Delete</strong></a> - delete a user
+    </li>
 </ul>
 
 <?php include "public/templates/footer.php"; ?> 
